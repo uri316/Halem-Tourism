@@ -1,0 +1,161 @@
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+    "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
+    "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    line-height: 1.9;
+    font-size:1.1em;
+    padding-top:55px;
+    }
+
+a {
+    color: #fff;
+    text-decoration: none;
+    }
+/*hoverはカーソルが乗ったとき*/  
+a:hover,a:hover img {
+opacity: 0.8;
+transition: all .3s;
+color: #fff;
+text-decoration: none;
+}
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    }
+
+/*--------------------------------
+ヘッダー・ロゴ・背景
+---------------------------------*/
+.header {
+    display: flex;
+    height: 340px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bk01.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    }
+
+.header .logo-title {
+    font-family:"Open sans" ,"sans-serif";
+    font-size:2em;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    letter-spacing: .2em; 
+    }
+
+/*--------------------------------
+グローバルナビ
+---------------------------------*/
+.navbar-toggler {
+    background-color: #ddd;
+}
+.gnav {
+    background-color: #f05b43;
+}
+  
+.gnav li a {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #ddd;
+    display: block;
+    padding:0 20px;
+}
+
+/* タイトル テキスト */
+.title{
+    font-size:3em;
+    font-family:"Open sans","sans-serif";
+    font-weight: 700;
+    font-style: normal;
+    padding:1em 0;
+    margin:3em 0;
+    }
+
+.title_p{
+    font-size:3em;
+    font-family:"Open sans","sans-serif";
+    font-weight: 700;
+    font-style: normal;
+    padding:1em 0;
+    margin:3em 0;
+    color: #fff;
+    }
+.h2_about {
+    font-size:1.6em;
+    font-weight: 700;
+}
+
+.p_column {
+    font-size: 1.6em;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+}
+
+/*--------------------------------
+pic up
+---------------------------------*/
+.contents {
+    height: 120%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bk02.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    }
+
+/*--------------------------------
+Footer
+---------------------------------*/
+
+.footer {
+    font-family: "Open Sans" ,sans-serif;
+    background-color: #f05b43;
+    width:100%;
+    text-align: center;
+    color:#fff
+    }
+    .footer a{
+    color:#fff
+    }
+    .footer p{
+    margin:0;
+    }
+
+/* SNS */
+
+/* 最小横サイズが768px ipad 縦おき */
+@media (min-width:768px){
+    body{
+          padding-top:58px;
+    }
+    .gnav li+li{
+      border-left: 1px solid #ddd;
+    }
+  
+    .header {
+    height: 900px;
+    }
+  
+    .header .logo-name {
+    font-size: 2em;
+    }
+  
+    .header .logo-title {
+    font-size:3em;
+  
+    }
+
+  }
