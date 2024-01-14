@@ -14,7 +14,7 @@ a {
     color: #fff;
     text-decoration: none;
     }
-/*hoverはカーソルが乗ったとき*/  
+
 a:hover,a:hover img {
 opacity: 0.8;
 transition: all .3s;
@@ -32,9 +32,6 @@ ul{
     padding-left: 0;
     }
 
-/*--------------------------------
-ヘッダー・ロゴ・背景
----------------------------------*/
 .header {
     display: flex;
     height: 340px;
@@ -54,9 +51,6 @@ ul{
     letter-spacing: .2em; 
     }
 
-/*--------------------------------
-グローバルナビ
----------------------------------*/
 .navbar-toggler {
     background-color: #ddd;
 }
@@ -72,7 +66,6 @@ ul{
     padding:0 20px;
 }
 
-/* タイトル テキスト */
 .title{
     font-size:3em;
     font-family:"Open sans","sans-serif";
@@ -104,9 +97,6 @@ ul{
     padding: 0 45px;
 }
 
-/*--------------------------------
-pic up
----------------------------------*/
 .contents {
     height: 120%;
     justify-content: center;
@@ -116,10 +106,6 @@ pic up
     background-position: left bottom;
     }
 
-/*--------------------------------
-Footer
----------------------------------*/
-
 .footer {
     font-family: "Open Sans" ,sans-serif;
     background-color: #f05b43;
@@ -127,16 +113,13 @@ Footer
     text-align: center;
     color:#fff
     }
-    .footer a{
+.footer a{
     color:#fff
     }
-    .footer p{
+.footer p{
     margin:0;
     }
 
-/* SNS */
-
-/* 最小横サイズが768px ipad 縦おき */
 @media (min-width:768px){
     body{
           padding-top:58px;
