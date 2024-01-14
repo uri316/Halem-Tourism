@@ -5,33 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="wclassth=device-wclassth,initial-scale=1.0,user-scalable=no">
     <meta name="description" content="ハーレム観光サイト">
-
-    <!-- SNSでシェアされた際の表示方法 OGP -->
-    <meta property='og:url' content='URLが入る'>
+    <meta property='og:url' content='https://uri316.github.io/Halem-Tourism/'>
     <meta property='og:type' content='website'>
     <meta property='og:description' content='halem tourism'>
     <meta property='og:site_name' content='halem tourism'>
     <meta property="og:image" content="img">
-
-    <!-- 検索エンジンにはインデックスされない -->
     <meta name="robots" content="noindex" >
-    <!-- CDN Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">  
     <title>Harlem tourism site</title>
-
-    <!-- Bootstrap4 CSS CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-
-    <!-- 自分用のCSS　cssフォルダ -->
     <link href="style.css" rel="stylesheet">
     <link href="reset.css" media="all" rel="stylesheet" type="textcss" />
-
-    <!-- 欧文　front-page-title -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
     rel="stylesheet">
-
-    <!-- Webアイコン　fontawosome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -62,7 +48,6 @@
         </nav>
     </div>
     </header>
-    <!-- about -->
     <article class="container mb-3 mb-md-5" id="about">
         <section>
             <h1 class="title text-center mb-2 mb-md-5">ABOUT</h1>  
@@ -80,7 +65,6 @@
             </div>
         </section>
     </article>
-    <!-- pic up -->
     <div class="mb-3 mb-md-5" id="picup">
         <article class="contents">
                 <h1 class="title_p mb-2 mb-md-5 text-center">PIC UP</h1>
@@ -109,7 +93,6 @@
                 </div>    
         </article>
     </div>
-    <!-- column -->
     <article class="container mb-3 mb-md-5" id="column">
         <section>
             <h1 class="title text-center">COLUMN</h1>
@@ -127,7 +110,6 @@
             </div>
         </section>
     </article>
-    <!-- contact -->
     <article class="container mb-3 mb-md-5" id="contact">
         <section>
         <h1 class="title text-center">CONTACT</h1>
@@ -174,24 +156,14 @@
 
     <script>
         $(function () {
-          // #で始まるa要素をクリックした場合に処理
           $('a[href^=#]').click(function () {
-            // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
             var adjust = -40;
-            // スクロールの速度（ミリ秒）
             var speed = 400;
-            // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
             var href = $(this).attr("href");
-            // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
             var target = $(href == "#" || href == "" ? 'html' : href);
-            // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
             var position = target.offset().top + adjust;
-            // スムーススクロール linear（等速） or swing（変速）
             $('body,html').animate({ scrollTop: position }, speed, 'swing');
-    
-            //fixed-top で固定しているハンバーガーメニューをクリックしたら引っ込める
             $('.navbar-collapse').removeClass('show');
-    
             return false;
           });
         });
